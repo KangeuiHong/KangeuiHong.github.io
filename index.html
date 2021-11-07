@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="UTF-8">
+<TITLE> About - Me </TITLE>
+<style>
+
+html{
+    scroll-behavior: smooth;
+}
+
+.img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  float: left;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(26, 19, 12, 1);
+    z-index: 2;
+}
+.topnav:hover{
+     background-color: #463932;
+} 
+  /* Style the topnav links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: top;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+  z-index: 3;
+}
+
+.topnav a div.bottom {
+    background-color: #867975;
+    position: absolute;
+    top: 110%;
+    z-index: 2;
+    align-self: center;
+    width: 50%;
+    height: 20%;
+    transition: 0.2s;
+    z-index: 4;
+}
+.topnav a:hover div.bottom {
+top: 90%;
+}
+
+
+
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1;
+}
+.bg:hover div.texth{
+    top:70%;
+ opacity: 1;
+}
+
+video {
+  width: 100%;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+}
+
+.text p {
+  text-align: left;
+  font-size: 70px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+
+.texth {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 110%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: solid 5px #30bbf1;
+  border-radius: 4px;
+  transition: 2s;
+  opacity: 0;
+}
+
+.texth p {
+  text-align: left;
+  font-size: 70px;
+  color: #000000;
+  margin: 0px;
+}
+.texth2 {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 110%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  transition: 2s;
+  opacity: 0;
+  z-index: 5;
+}
+.texth2 p {
+  text-align: center;
+  font-size: 70px;
+  color: #ffffff;
+  margin: 0px;
+}
+.bg:hover div.texth2{
+    top:80%;
+ opacity: 1;
+}
+.texth3 {
+  position: absolute;
+  overflow: hidden;
+  width: 600px;
+  top: 85%;
+  left: 110%;
+  transform: translate(-50%,-50%);
+  transition: 2s;
+  opacity: 0;
+  z-index: 5;
+}
+.texth3 p {
+  text-align: center;
+  font-size: 70px;
+  color: #333;
+  margin: 0px;
+}
+.bg:hover div.texth3{
+    left:80%;
+ opacity: 1;
+}
+.bar{
+    margin-left: 150px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 1px;
+    background-color: rgba(14, 138, 240, 0.842);
+    border: rgba(14, 138, 240, 0.842) 1px solid;
+}
+.footer{
+   background-color: #333;
+   font-family: sans-serif;
+   text-align: center;
+   padding: 20px;
+   color:silver;
+   margin: 0px;
+ }
+
+</style>
+</HEAD>
+<body>
+    
+    <div class="topnav">
+        <a href="#section1">Home
+            <div class="bottom"></div>
+        </a>
+        <a href="#section2">major
+            <div class="bottom"></div>
+        </a>
+        <a href="#section3">Interests
+            <div class="bottom"></div>
+        </a>
+        <a href="#section4">Others
+            <div class="bottom"></div>
+        </a>
+     </div>
+     <div class="bg" id="section1">
+        <video muted autoplay loop>
+          <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <p> 전북대학교 학부생<br>
+                홍강의 입니다.
+            </p>
+        </div> 
+    </div>
+
+    <div class="bg" id="section2">
+        <img src="concrete.png">
+        <div class="texth" style="width: 800px;left: 30%;">
+            <p style="color: #333;margin-left: 20px;">제 전공은<br>지역건설공학 입니다.</p>
+            <p style="margin-left: 40px;margin-bottom:20px;font-size: 20px;color: black;">현재 지역건설공학과의 학부생이며<br>
+            전공과목 학습에 매진하는 중이지만<br>이번 학기 수업을 듣고 있는 디지털 농업에도 관심을 가지고 있고<br>코딩 관련 학습에도 도전하는 중입니다.
+            </p>
+           
+        </div>
+    </div>
+
+    <div class="bg" id="section3">
+        <video muted autoplay loop>
+          <source src="background2.mp4" type="video/mp4">
+        </video>
+        <div class="text" style="left:100%;">
+            <p>나의 관심사</p>
+            <p style="font-size: 20px;margin-left: 40px;"><br>Epic games의 Unreal Engine을 굉장히 좋아합니다.<br>
+            Unreal Engine을 사용한 다양한 산업을 큰 관심을 갖고 지켜보고 있으며<br>
+            또 그와 관련된 3D 툴이나 가상 시뮬레이션, AI 등 다양한 기술을 사용하는 일들을 알아보고 있습니다.
+            </p>
+        </div> 
+    </div>
+
+    <div class="bg" id="section4">
+        <img src="House.png">
+        <div class="texth2" style="width: 800px;left: 30%;">
+            <p>저는!</p>
+            <div class="bar"></div>
+            <p style="margin-bottom:20px;font-size: 20px;">비 전공자들 중 코딩에 관심이 많으신 분들<br>
+            저와 비슷한 관심사를 가지고 계신 분들이 있다면<br>커뮤니티를 만들거나 들어가 보고 싶다는 생각이 있어요!<br>
+            </p>
+        </div>
+        <div class="texth3">
+            <p>주소</p>
+            <div class="bar" style="margin-left: 100px; width:400px"></div>
+            <p style="margin-bottom:20px;font-size: 20px;color: #333;">rkddml475@naver.com
+            </p>
+        </div>
+    </div>
+
+     <div class="footer">
+        <h1>자기소개 웹페이지</h1>
+        © 전북대학교 디지털농업개론 21-A 201923089 홍강의
+        <p style="font-size: 12px;">아직 최적화가 많이 부족합니다! 쓸데없는 코드가 많아요.</p>
+      </div>
+</body>
+</HTML>
